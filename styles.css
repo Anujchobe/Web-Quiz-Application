@@ -1,1 +1,11 @@
-css file
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#quiz {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
