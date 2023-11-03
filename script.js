@@ -33,8 +33,8 @@ const quizData = [
     question: "What is the largest mammal in the world?",
     choices: ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
     answer: "Blue Whale"
-  }
- {
+  },
+  {
     question: "Which chemical element has the symbol 'Fe' and atomic number 26?",
     choices: ["Iron", "Gold", "Silver", "Copper"],
     answer: "Iron"
@@ -64,6 +64,7 @@ const quizData = [
     choices: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
     answer: "Leonardo da Vinci"
   }
+  // Add more questions as needed
 ];
 
 let currentQuestion = 0;
