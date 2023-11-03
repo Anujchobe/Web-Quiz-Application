@@ -79,9 +79,15 @@ function loadQuestion() {
   for (let i = 0; i < quizData[currentQuestion].choices.length; i++) {
     const li = document.createElement("li");
     li.textContent = quizData[currentQuestion].choices[i];
-    li.onclick = function() {
+    li.addEventListener("click", function() {
       checkAnswer(quizData[currentQuestion].choices[i]);
-    };
+    });
+    li.addEventListener("mouseover", function() {
+      li.style.backgroundColor = "#f4f4f4";
+    });
+    li.addEventListener("mouseout", function() {
+      li.style.backgroundColor = "initial";
+    });
     choicesElement.appendChild(li);
   }
 }
